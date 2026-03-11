@@ -1,0 +1,43 @@
+{% load static %}
+<div id="myCalculator">
+<h1 style="color:blue; 
+        text-align: center;">Kalkulator V2</h1>
+<input 
+type="text"
+id="calcInput"
+maxlength="8"
+placeholder="8 ta raqam faqat 0 yoki 1"
+readonly
+/>
+
+<br></br>
+    <div class="keyboard">
+        <button onclick="addNumber('1')">1</button>
+        <button onclick="addNumber('2')">2</button>
+        <button onclick="addNumber('3')">3</button>
+        <button onclick="addNumber('4')">4</button>
+        <button onclick="addNumber('5')">5</button>
+        <button onclick="addNumber('6')">6</button>
+        <button onclick="addNumber('7')">7</button>
+        <button onclick="addNumber('8')">8</button>
+        <button onclick="addNumber('9')">9</button>
+        <button onclick="addNumber('.')">.</button>
+        <button onclick="addNumber('0')">0</button>
+        <button class="delete" onclick="deleteLast()">⌫</button> <!-- Backspace -->
+        <button class="enter" onclick="enterNumber()">Enter</button>
+    </div>
+    <!-- 8-bit jadval -->
+    <table id="binaryTable">
+        <thead>
+            <tr>
+                <th>Decimal</th>
+                <th>8-bit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- JS orqali qo‘shiladi -->
+        </tbody>
+    </table>
+</div>
+</div>
+</div>

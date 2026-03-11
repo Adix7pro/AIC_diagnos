@@ -1,0 +1,101 @@
+body{
+    margin : 0;
+    padding: 0;
+
+
+    background-image: url("/static/images/background_sky.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+#main_title{
+    color : white;
+    text-align: left;
+
+}
+
+
+
+
+/* Kalkulyator / Klaviatura uchun maxsus ID */
+#myCalculator {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    max-width: 280px;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+#myCalculator input {
+    display: block;
+    width: 220px;
+    margin: 10px auto 20px auto;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#myCalculator .keyboard {
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    gap: 10px;
+    justify-content: center;
+}
+
+#myCalculator .keyboard button {
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#myCalculator .keyboard button:hover {
+    background-color: #45a049;
+}
+
+#myCalculator .keyboard .enter {
+    grid-column: span 3;
+    background-color: #2196F3;
+}
+
+#myCalculator .keyboard .enter:hover {
+    background-color: #0b7dda;
+}
+
+/* Jadval uchun stil */
+#binaryTable {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#binaryTable th, #binaryTable td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    font-family: monospace;
+}
+
+#binaryTable th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#binaryTable td span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin: 2px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+}
