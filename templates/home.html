@@ -12,11 +12,31 @@
 </head>
 <body>
 
-<div class="keyboard-container">
+<div class="main-container">
 
-{% include "components/number_input.html" %}
+    <!-- LEFT -->
+    {% include 'components/number_input.html' %}
+
+<!-- O‘NG -->
+<!-- 
+    <div class="right-panel">
+
+       
+        <div class="top-panel">
+            {% include 'components/network.html' %}
+        </div>
+
+        
+        <div class="bottom-panel">
+            {% include 'components/error.html' %}
+        </div>
+
+    </div> 
+ -->
+
+
+<script src="{% static 'js/script.js' %}"></script>
 </div>
-
 </body>
 </html>
 
